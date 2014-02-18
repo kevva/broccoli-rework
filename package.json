@@ -1,6 +1,6 @@
 {
   "name": "broccoli-rework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Preprocess CSS with Rework",
   "keywords": [
     "broccoli-plugin",
@@ -30,9 +30,8 @@
   ],
   "dependencies": {
     "broccoli-filter": "0.0.1",
-    "rework": "~0.20.2",
     "object-assign": "~0.2.0",
-    "lodash": "~2.4.1"
+    "rework": "~0.20.2"
   },
   "devDependencies": {
     "broccoli": "~0.1.1",
