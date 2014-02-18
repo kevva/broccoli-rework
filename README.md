@@ -26,7 +26,7 @@ an object with options as the last argument.
 
 ### use
 
-Type: `Boolean`  
+Type: `Function`  
 Default: `undefined`
 
 Accepts a function that gives you the ability to interact with rework before 
