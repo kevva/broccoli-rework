@@ -1,0 +1,45 @@
+{
+  "name": "broccoli-rework",
+  "version": "0.1.0",
+  "description": "Preprocess CSS with Rework",
+  "keywords": [
+    "broccoli-plugin",
+    "compile",
+    "css",
+    "preprocess",
+    "preprocessor",
+    "rework",
+    "style",
+    "stylesheet"
+  ],
+  "homepage": "https://github.com/kevva/broccoli-rework",
+  "bugs": "https://github.com/kevva/broccoli-rework/issues",
+  "author": {
+    "name": "Kevin Mårtensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "https://github.com/kevva"
+  },
+  "license": "MIT",
+  "repository": "git://github.com/kevva/broccoli-rework.git",
+  "scripts": {
+    "test": "broccoli build test/tmp && mocha --reporter list"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "broccoli-filter": "0.0.1",
+    "rework": "~0.20.2",
+    "object-assign": "~0.2.0",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+    "broccoli": "~0.1.1",
+    "mocha": "~1.17.0",
+    "rimraf": "~2.2.6"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
