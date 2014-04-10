@@ -1,4 +1,4 @@
-# broccoli-rework [![Build Status](https://travis-ci.org/kevva/broccoli-rework.png?branch=master)](http://travis-ci.org/kevva/broccoli-rework)
+# broccoli-rework [![Build Status](https://travis-ci.org/kevva/broccoli-rework.svg?branch=master)](https://travis-ci.org/kevva/broccoli-rework)
 
 > Preprocess CSS with [Rework](https://github.com/reworkcss/rework).
 
