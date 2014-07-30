@@ -42,8 +42,10 @@ ReworkFilter.prototype.targetExtension = 'css';
  * @api public
  */
 
-ReworkFilter.prototype.processString = function (str) {
-    var rework = new Rework(str);
+ReworkFilter.prototype.processString = function (str, relativePath) {
+    var rework = new Rework(str, {
+      source: relativePath
+    });
 
     if (this.opts.use) {
         this.opts.use(rework);
