@@ -1,6 +1,6 @@
 {
   "name": "broccoli-rework",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Preprocess CSS with Rework",
   "license": "MIT",
   "repository": "kevva/broccoli-rework",
