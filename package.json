@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/broccoli build test/tmp && mocha --reporter list"
+    "test": "./node_modules/.bin/broccoli build test/tmp && node test/test.js"
   },
   "files": [
     "index.js"
@@ -34,9 +34,9 @@
     "rework": "^1.0.0"
   },
   "devDependencies": {
+    "ava": "^0.0.4",
     "broccoli": "^0.13.2",
     "broccoli-cli": "^0.0.1",
-    "mocha": "^2.0.1",
     "rework-plugin-colors": "^1.0.3",
     "rimraf": "^2.2.6"
   }

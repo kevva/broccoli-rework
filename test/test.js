@@ -1,20 +1,26 @@
-/*global afterEach, describe, it */
 'use strict';
 
-var assert = require('assert');
 var fs = require('fs');
 var path = require('path');
 var rm = require('rimraf');
+var test = require('ava');
 
-describe('broccoli-rework()', function () {
-	afterEach(function (cb) {
-		rm.sync(path.join(__dirname, 'tmp'));
-		rm.sync(path.join(__dirname, '../tmp'));
-		cb();
-	});
+test('transpile CSS', function (t) {
+	t.plan(4);
 
-	it('should process CSS', function (cb) {
-		var css = 'body {\n  background: rgba(255, 255, 255, 1);\n}';
-		cb(assert.strictEqual(fs.readFileSync(path.join(__dirname, 'tmp/test.css'), 'utf8'), css));
+	var css = 'body {\n  background: rgba(255, 255, 255, 1);\n}';
+	var dest = path.join(__dirname, 'tmp/test.css');
+
+	fs.readFile(dest, 'utf8', function (err, data) {
+		t.assert(!err, err);
+		t.assert(data === css);
+
+		rm(path.join(__dirname, 'tmp'), function (err) {
+			t.assert(!err, err);
+
+			rm(path.join(__dirname, '../tmp'), function (err) {
+				t.assert(!err, err);
+			});
+		});
 	});
 });
