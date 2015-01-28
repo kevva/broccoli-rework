@@ -1,4 +1,4 @@
-# broccoli-rework [![Build Status](https://travis-ci.org/kevva/broccoli-rework.svg?branch=master)](https://travis-ci.org/kevva/broccoli-rework)
+# broccoli-rework [![Build Status](http://img.shields.io/travis/kevva/broccoli-rework.svg?style=flat)](https://travis-ci.org/kevva/broccoli-rework)
 
 > Preprocess CSS with [Rework](https://github.com/reworkcss/rework)
 
@@ -30,8 +30,7 @@ an object with options as the last argument.
 
 ### use
 
-Type: `Function`  
-Default: `undefined`
+Type: `Function`
 
 Accepts a function that gives you the ability to interact with rework before
 compiling. Useful for adding on plugins, etc.
