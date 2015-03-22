@@ -2,11 +2,13 @@
 
 > Preprocess CSS with [Rework](https://github.com/reworkcss/rework)
 
+
 ## Install
 
 ```bash
-$ npm install --save broccoli-rework
+$ npm install --save-dev broccoli-rework
 ```
+
 
 ## Usage
 
@@ -14,26 +16,29 @@ $ npm install --save broccoli-rework
 var rework = require('broccoli-rework');
 var colors = require('rework-plugin-colors');
 
-tree = rework(tree, { use: function (css) {
+tree = rework(tree, {use: function (css) {
 	css.use(colors());
 }});
 ```
 
+
 ## API
 
-### rework(tree, opts)
+### rework(tree, options)
 
 Initialize a new rework with the given string of regular CSS. Optionally supply
 an object with options as the last argument.
+
 
 ## Options
 
 ### use
 
-Type: `Function`
+Type: `function`
 
 Accepts a function that gives you the ability to interact with rework before
 compiling. Useful for adding on plugins, etc.
+
 
 ## License
 
