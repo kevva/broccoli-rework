@@ -1,6 +1,6 @@
 'use strict';
 
-var assign = require('object-assign');
+var objectAssign = require('object-assign');
 var Filter = require('broccoli-filter');
 var Rework = require('rework');
 
@@ -32,4 +32,4 @@ ReworkFilter.prototype.processString = function (str, relativePath) {
 
 module.exports = ReworkFilter;
 delete Rework.properties;
-assign(module.exports, Rework);
+objectAssign(module.exports, Rework);

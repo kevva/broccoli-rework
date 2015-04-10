@@ -5,7 +5,7 @@
 
 ## Install
 
-```bash
+```
 $ npm install --save-dev broccoli-rework
 ```
 
@@ -30,9 +30,7 @@ Initialize a new rework with the given string of regular CSS. Optionally supply
 an object with options as the last argument.
 
 
-## Options
-
-### use
+#### options.use(css)
 
 Type: `function`
 
