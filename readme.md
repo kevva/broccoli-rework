@@ -16,9 +16,11 @@ $ npm install --save-dev broccoli-rework
 var rework = require('broccoli-rework');
 var colors = require('rework-plugin-colors');
 
-tree = rework(tree, {use: function (css) {
-	css.use(colors());
-}});
+tree = rework(tree, {
+	use: function (css) {
+		css.use(colors());
+	}
+});
 ```
 
 
