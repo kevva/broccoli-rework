@@ -30,13 +30,13 @@
   ],
   "dependencies": {
     "broccoli-filter": "^0.1.6",
-    "object-assign": "^1.0.0",
+    "object-assign": "^2.0.0",
     "rework": "^1.0.0"
   },
   "devDependencies": {
     "ava": "^0.0.4",
-    "broccoli": "^0.13.2",
-    "broccoli-cli": "^0.0.1",
+    "broccoli": "^0.15.3",
+    "broccoli-cli": "^1.0.0",
     "rework-plugin-colors": "^1.0.3",
     "rimraf": "^2.2.6"
   }
