@@ -1,5 +1,4 @@
 'use strict';
-
 var rework = require('./');
 var colors = require('rework-plugin-colors');
 

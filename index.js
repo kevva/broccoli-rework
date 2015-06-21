@@ -1,5 +1,4 @@
 'use strict';
-
 var objectAssign = require('object-assign');
 var Filter = require('broccoli-filter');
 var Rework = require('rework');
